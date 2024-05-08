@@ -14,7 +14,7 @@ const handleLastName = (event) =>{
 
 const handleFullname = (event) =>{
     event.preventDefault();
-    setFullNameDisplay(`${firstName} ${lastName}`)
+    setFullNameDisplay(firstName +" " + lastName)
     setFirstName('')
     setLastName('')
 }
@@ -33,7 +33,7 @@ return(<div>
         <button type="submit">Submit</button>
     </form>
 
-    {fullNamedisplay  && <p>Full Name : {fullNamedisplay}</p>}
+    {fullNamedisplay  && `Full Name : ${fullNamedisplay}`}
 </div>)
 }
 
