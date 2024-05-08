@@ -24,11 +24,11 @@ return(<div>
     <form onSubmit={handleFullname}>
         <div style={{marginBottom:"10px"}}>
             <label>Full Name: </label>
-            <input type="name" value={firstName} onChange={handleFirstName} required />
+            <input type="text" value={firstName} onChange={handleFirstName} required />
         </div>
         <div style={{marginBottom:"10px"}}> 
             <label>Last Name: </label>
-            <input type="name" value={lastName} onChange={handleLastName} required />
+            <input type="text" value={lastName} onChange={handleLastName} required />
         </div>
         <button type="submit">Submit</button>
     </form>
